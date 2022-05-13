@@ -1,0 +1,22 @@
+spring:
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/db.changelog-master.xml
+  banner:
+    location: classpath:banner.txt
+
+server:
+  port: 2021
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health
+---
+spring:
+  profiles: local
+  cloud:
+    config:
+      uri: http://localhost:2021
+      label: develop
+
