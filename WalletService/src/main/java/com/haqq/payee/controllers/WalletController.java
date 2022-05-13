@@ -1,7 +1,11 @@
 package com.haqq.payee.controllers;
 
 
+import com.haqq.payee.entities.Wallet;
+import com.haqq.payee.pojos.ApiResponse;
 import com.haqq.payee.pojos.CreateWalletRequest;
+import com.haqq.payee.pojos.MakePaymentRequest;
+import com.haqq.payee.pojos.MakePaymentResponse;
 import com.haqq.payee.services.WalletService;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
@@ -24,9 +28,17 @@ public class WalletController {
 
     @PostMapping("/user/createWallet")
     public String createWallet(@RequestBody CreateWalletRequest request) {
-        logger.info("createWallet called");
         return walletService.createWallet(request);
+    }
 
+    @GetMapping("/user/getWallet/{uuid}")
+    public Wallet getWallet(@PathVariable String uuid) {
+        return walletService.getWallet(uuid);
+    }
+
+    @PostMapping("/user/makePayment")
+    public MakePaymentResponse makePayment(@RequestBody MakePaymentRequest request) {
+        return walletService.makePayment(request);
     }
 
 }

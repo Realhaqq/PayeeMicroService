@@ -5,96 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eceb0841-30fb-4d88-be0a-38d430a5e57d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_logging_interceptor_3_14_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_14_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/apihandlers/WalletServiceApiHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/pojos/CreateWalletRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/retrofitservice/WalletService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/controllers/WalletController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/entities/SettlementWallet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/enums/RoleName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/errors/AppException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/errors/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/pojos/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/pojos/CreateWalletRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/pojos/GenericResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/pojos/JwtAuthenticationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/pojos/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/pojos/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/pojos/SignUpRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/pojos/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/services/WalletService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/utils/AESEncryptionDecryption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/utils/DateAudit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/resources/db/changelog/db.changelog-1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/resources/db/changelog/db.changelog-2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/resources/db/changelog/db.changelog-master.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/resources/liquibase-diff-changeLog.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/resources/liquibase.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_11_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_11_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_4_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_17_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_17_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_62.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_62.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_62.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_21_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_6_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_6_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_6_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_6_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_6_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_6_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_6_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_6_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_6_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_6_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_8_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_29.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/pojos/MakePaymentRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/pojos/MakePaymentResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/pojos/Wallet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/pojos/WalletResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/pojos/MakePaymentRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/pojos/MakePaymentResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/repositories/SettlementWalletRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSevice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/UserSeviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/UserSeviceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/controllers/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/entities/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/entities/Wallet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/repositories/WalletRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/repositories/WalletRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/services/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/services/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WalletService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WalletService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WalletService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WalletService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/apihandlers/WalletServiceApiHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/apihandlers/WalletServiceApiHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/retrofitservice/WalletService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/retrofitservice/WalletService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/controllers/WalletController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/controllers/WalletController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/repositories/WalletRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/repositories/WalletRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/services/WalletService.java" beforeDir="false" afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/services/WalletService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +55,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/WalletService/src/main/resources/db/changelog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/pojos" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -142,25 +67,25 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.haqq.payee.services" />
       <recent name="com.haqq.payee.pojos" />
+      <recent name="com.haqq.payee.services" />
       <recent name="com.haqq.payee.retrofitservice" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/pojos" />
       <recent name="$PROJECT_DIR$/WalletService/src/main/resources/db/changelog" />
       <recent name="$PROJECT_DIR$/WalletService/src/main/resources" />
       <recent name="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee" />
       <recent name="$PROJECT_DIR$/UserSevice/src/main/resources/db/changelog" />
-      <recent name="$PROJECT_DIR$/UserSevice/src/main/resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.haqq.payee" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.haqq.payee.repositories" />
       <recent name="com.haqq.payee.pojos" />
       <recent name="com.haqq.payee.entities" />
       <recent name="com.haqq.payee.errors" />
-      <recent name="com.haqq.payee.repositories" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -216,7 +141,8 @@
       <workItem from="1652430314785" duration="38000" />
       <workItem from="1652430364001" duration="3083000" />
       <workItem from="1652433685794" duration="9025000" />
-      <workItem from="1652444627748" duration="526000" />
+      <workItem from="1652444627748" duration="4175000" />
+      <workItem from="1652451617320" duration="1807000" />
     </task>
     <servers />
   </component>
