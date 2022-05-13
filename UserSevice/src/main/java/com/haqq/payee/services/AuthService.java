@@ -1,18 +1,15 @@
 package com.haqq.payee.services;
 
+import com.haqq.payee.apihandlers.WalletServiceApiHandler;
 import com.haqq.payee.entities.Role;
 import com.haqq.payee.entities.User;
-import com.haqq.payee.entities.Wallet;
-import com.haqq.payee.enums.RoleName;
 import com.haqq.payee.errors.AppException;
-import com.haqq.payee.pojos.ApiResponse;
-import com.haqq.payee.pojos.JwtAuthenticationResponse;
-import com.haqq.payee.pojos.LoginRequest;
-import com.haqq.payee.pojos.SignUpRequest;
+import com.haqq.payee.pojos.*;
 import com.haqq.payee.repositories.RoleRepository;
 import com.haqq.payee.repositories.UserRepository;
-import com.haqq.payee.repositories.WalletRepository;
 import com.haqq.payee.security.JwtTokenProvider;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +20,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+import retrofit2.Response;
 
 import java.net.URI;
 import java.util.Collections;
@@ -41,13 +39,16 @@ public class AuthService {
     RoleRepository roleRepository;
 
     @Autowired
-    WalletRepository walletRepository;
-
-    @Autowired
     JwtTokenProvider tokenProvider;
 
     @Autowired
     PasswordEncoder passwordEncoder;
+
+    @Autowired
+    WalletServiceApiHandler walletServiceApiHandler;
+
+    Logger logger = LoggerFactory.getLogger(AuthService.class);
+
     public ResponseEntity<?> signin(LoginRequest loginRequest) {
         try {
             Authentication authentication = authenticationManager.authenticate(
@@ -116,11 +117,21 @@ public class AuthService {
     private String CreateUserWallet(String uuid) {
         String wallet_id = String.valueOf(System.currentTimeMillis());
 
-        Wallet wallet = new Wallet();
-        wallet.setWalletId(wallet_id);
-        wallet.setUserId(uuid);
-        walletRepository.save(wallet);
-        System.out.println("Wallet Created!");
-        return wallet_id;
+        CreateWalletRequest createWalletRequest = new CreateWalletRequest();
+        createWalletRequest.setUuid(uuid);
+        createWalletRequest.setWalletId(wallet_id);
+        try {
+            Response response = walletServiceApiHandler.createWallet(createWalletRequest);
+            logger.info("Wallet Created Successfully" + response.body());
+            if(response.isSuccessful()) {
+                return wallet_id;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            logger.error("Wallet Creation Failed" + e.getMessage());
+            return null;
+        }
+
+        return null;
     }
 }

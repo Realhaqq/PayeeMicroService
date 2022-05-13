@@ -43,5 +43,4 @@ public class AuthController {
         return authService.userSignup(signUpRequest);
     }
 
-
 }
