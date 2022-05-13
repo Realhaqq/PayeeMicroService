@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eceb0841-30fb-4d88-be0a-38d430a5e57d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/errors/AppException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/pojos/SignUpRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/resources/db/changelog/db.changelog-2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/controllers/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/enums/RoleName.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/enums/RoleName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/security/UserPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/security/UserPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/services/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/services/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/resources/db/changelog/db.changelog-1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/resources/db/changelog/db.changelog-1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/resources/db/changelog/db.changelog-master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/resources/db/changelog/db.changelog-master.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +52,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/UserSevice/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/UserSevice/src/main/resources/db/changelog" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -58,18 +68,18 @@
       <recent name="com.haqq.payee.services" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/UserSevice/src/main/resources/db/changelog" />
       <recent name="$PROJECT_DIR$/UserSevice/src/main/resources" />
       <recent name="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee" />
       <recent name="$PROJECT_DIR$/UserIdentityService/src/main/java/com/haqq/payee/repositories" />
       <recent name="$PROJECT_DIR$/User Identity Service/src/main/java/com/haqq/payee/utils" />
-      <recent name="$PROJECT_DIR$/User Identity Service/src/main/java/com/haqq/payee" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.haqq.payee" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.haqq.payee.entities" />
       <recent name="com.haqq.payee.errors" />
+      <recent name="com.haqq.payee.entities" />
       <recent name="com.haqq.payee.repositories" />
     </key>
   </component>
@@ -132,7 +142,7 @@
       <workItem from="1652429708920" duration="590000" />
       <workItem from="1652430314785" duration="38000" />
       <workItem from="1652430364001" duration="3083000" />
-      <workItem from="1652433685794" duration="3532000" />
+      <workItem from="1652433685794" duration="4869000" />
     </task>
     <servers />
   </component>

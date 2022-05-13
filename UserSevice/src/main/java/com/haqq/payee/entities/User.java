@@ -62,9 +62,6 @@ public class User extends DateAudit implements Serializable {
     @Temporal(TemporalType.TIMESTAMP)
     private Date lastLogin;
 
-    @Column(length=32, nullable = false)
-    private String phoneNumber;
-
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "user_roles",

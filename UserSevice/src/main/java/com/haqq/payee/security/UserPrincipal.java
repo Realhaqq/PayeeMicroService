@@ -44,7 +44,6 @@ public class UserPrincipal implements UserDetails {
         this.email = userPrincipal.getEmail();
         this.password = userPrincipal.getPassword();
         this.uuid = userPrincipal.getUuid();
-        this.phoneNumber = userPrincipal.getPhoneNumber();
         this.enable = userPrincipal.getEnable();
         this.walletId = userPrincipal.getWalletId();
         this.authorities = authorities;
