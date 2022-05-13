@@ -1,6 +1,7 @@
 package com.haqq.payee.controllers;
 
 
+import com.haqq.payee.entities.SettlementWallet;
 import com.haqq.payee.entities.Wallet;
 import com.haqq.payee.pojos.ApiResponse;
 import com.haqq.payee.pojos.CreateWalletRequest;
@@ -39,6 +40,11 @@ public class WalletController {
     @PostMapping("/user/makePayment")
     public MakePaymentResponse makePayment(@RequestBody MakePaymentRequest request) {
         return walletService.makePayment(request);
+    }
+
+    @GetMapping("/institution/getSettlementWallet/{role}")
+    public SettlementWallet getSettlementWallet(@PathVariable String role) {
+        return walletService.getSettlementWallet(role);
     }
 
 }

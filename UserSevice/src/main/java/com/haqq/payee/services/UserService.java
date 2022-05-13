@@ -1,10 +1,7 @@
 package com.haqq.payee.services;
 
 import com.haqq.payee.apihandlers.WalletServiceApiHandler;
-import com.haqq.payee.pojos.ApiResponse;
-import com.haqq.payee.pojos.MakePaymentRequest;
-import com.haqq.payee.pojos.MakePaymentResponse;
-import com.haqq.payee.pojos.Wallet;
+import com.haqq.payee.pojos.*;
 import com.haqq.payee.repositories.RoleRepository;
 import com.haqq.payee.repositories.UserRepository;
 import com.haqq.payee.security.UserPrincipal;
@@ -65,5 +62,23 @@ public class UserService {
         return new ResponseEntity(new ApiResponse(false, "Payment Failed", 101, null),
                 HttpStatus.BAD_REQUEST);
 
+    }
+
+    public SettlementWallet getInstitutionWallet(String role) {
+        logger.info("Fetching institution wallet for role: " +role);
+        try {
+            Response response = walletServiceApiHandler.getInstitutionWallet(role);
+
+            if (response.isSuccessful()) {
+                logger.info("Institution wallet found for user: " + response.body());
+                return (SettlementWallet) response.body();
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            logger.error("Error while fetching institution wallet for user: " +e.getMessage());
+        }
+
+        return new SettlementWallet();
     }
 }

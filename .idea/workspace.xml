@@ -5,20 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eceb0841-30fb-4d88-be0a-38d430a5e57d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/pojos/MakePaymentRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/pojos/MakePaymentResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/pojos/Wallet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/pojos/WalletResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/pojos/MakePaymentRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/pojos/MakePaymentResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/repositories/SettlementWalletRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/pojos/SettlementWallet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/entities/SettlementTransactions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/repositories/SettlementTransactionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/apihandlers/WalletServiceApiHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/apihandlers/WalletServiceApiHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/controllers/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/retrofitservice/WalletService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/retrofitservice/WalletService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/controllers/WalletController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/controllers/WalletController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/repositories/WalletRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/repositories/WalletRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/services/WalletService.java" beforeDir="false" afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/services/WalletService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,8 +79,8 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.haqq.payee.repositories" />
-      <recent name="com.haqq.payee.pojos" />
       <recent name="com.haqq.payee.entities" />
+      <recent name="com.haqq.payee.pojos" />
       <recent name="com.haqq.payee.errors" />
     </key>
   </component>
@@ -142,7 +138,7 @@
       <workItem from="1652430364001" duration="3083000" />
       <workItem from="1652433685794" duration="9025000" />
       <workItem from="1652444627748" duration="4175000" />
-      <workItem from="1652451617320" duration="1807000" />
+      <workItem from="1652451617320" duration="3257000" />
     </task>
     <servers />
   </component>

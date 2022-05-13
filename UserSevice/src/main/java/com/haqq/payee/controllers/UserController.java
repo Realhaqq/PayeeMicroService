@@ -1,6 +1,7 @@
 package com.haqq.payee.controllers;
 
 import com.haqq.payee.pojos.MakePaymentRequest;
+import com.haqq.payee.pojos.SettlementWallet;
 import com.haqq.payee.pojos.Wallet;
 import com.haqq.payee.security.CurrentUser;
 import com.haqq.payee.security.UserPrincipal;
@@ -32,5 +33,11 @@ public class UserController {
     @PostMapping("/user/payment")
     public ResponseEntity<?> makePayment(@CurrentUser UserPrincipal currentUser, @RequestBody MakePaymentRequest request) {
         return userService.makePayment(currentUser, request);
+    }
+
+
+    @GetMapping("/institution/wallet/{role}")
+    public SettlementWallet getInstitutionWallet(@PathVariable String role) {
+        return userService.getInstitutionWallet(role);
     }
 }

@@ -1,6 +1,7 @@
 package com.haqq.payee.services;
 
 import com.haqq.payee.controllers.WalletController;
+import com.haqq.payee.entities.SettlementTransactions;
 import com.haqq.payee.entities.SettlementWallet;
 import com.haqq.payee.entities.Wallet;
 import com.haqq.payee.enums.RoleName;
@@ -8,6 +9,7 @@ import com.haqq.payee.pojos.ApiResponse;
 import com.haqq.payee.pojos.CreateWalletRequest;
 import com.haqq.payee.pojos.MakePaymentRequest;
 import com.haqq.payee.pojos.MakePaymentResponse;
+import com.haqq.payee.repositories.SettlementTransactionRepository;
 import com.haqq.payee.repositories.SettlementWalletRepository;
 import com.haqq.payee.repositories.WalletRepository;
 import org.slf4j.Logger;
@@ -26,6 +28,10 @@ public class WalletService {
 
     @Autowired
     private SettlementWalletRepository settlementWalletRepository;
+
+
+    @Autowired
+    private SettlementTransactionRepository settlementTransactionRepository;
 
     Logger logger = LoggerFactory.getLogger(WalletController.class);
 
@@ -70,6 +76,10 @@ public class WalletService {
         walletRepository.save(contractorWallet);
 
 
+
+        // save settlement transaction
+        settlementTransactionRepository.save(new SettlementTransactions(request.getAmount(), request.getContentCreatorId(), request.getContentId(), request.getContentType(), contractorWallet.getWalletId()));
+
         MakePaymentResponse response = new MakePaymentResponse();
         response.setMessage("Payment made successfully");
         response.setStatus("success");
@@ -78,5 +88,9 @@ public class WalletService {
 
         return response;
 
+    }
+
+    public SettlementWallet getSettlementWallet(String role) {
+        return settlementWalletRepository.findByRole(role);
     }
 }

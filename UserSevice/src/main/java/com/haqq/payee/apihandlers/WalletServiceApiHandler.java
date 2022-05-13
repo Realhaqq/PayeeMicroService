@@ -4,15 +4,12 @@ import com.google.gson.GsonBuilder;
 import com.haqq.payee.pojos.CreateWalletRequest;
 import com.haqq.payee.pojos.MakePaymentRequest;
 import com.haqq.payee.pojos.Wallet;
-import com.haqq.payee.pojos.WalletResponse;
 import com.haqq.payee.retrofitservice.WalletService;
 import lombok.RequiredArgsConstructor;
 import okhttp3.OkHttpClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 import retrofit2.Response;
 import retrofit2.Retrofit;
@@ -67,5 +64,10 @@ public class WalletServiceApiHandler {
     public Response makePayment(MakePaymentRequest request) throws IOException {
         String token = "Bearer " + this.token;
         return walletService.makePayment(token, request).execute();
+    }
+
+    public Response getInstitutionWallet(String role) throws IOException {
+        String token = "Bearer " + this.token;
+        return walletService.getInstitutionWallet(token, role).execute();
     }
 }
