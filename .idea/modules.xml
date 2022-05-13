@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/User Identity Service/User Identity Service.iml" filepath="$PROJECT_DIR$/User Identity Service/User Identity Service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UserSevice/UserSevice.iml" filepath="$PROJECT_DIR$/UserSevice/UserSevice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WalletService/WalletService.iml" filepath="$PROJECT_DIR$/WalletService/WalletService.iml" />
       <module fileurl="file://$PROJECT_DIR$/DiscoveryServer/payee.iml" filepath="$PROJECT_DIR$/DiscoveryServer/payee.iml" />
     </modules>
   </component>

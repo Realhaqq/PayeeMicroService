@@ -8,17 +8,22 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="payee" />
-        <module name="User Identity Service" />
+        <module name="UserSevice" />
+        <module name="WalletService" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="payee" target="11" />
       <module name="User Identity Service" target="11" />
+      <module name="UserSevice" target="11" />
+      <module name="WalletService" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="User Identity Service" options="-parameters" />
+      <module name="UserSevice" options="-parameters" />
+      <module name="WalletService" options="-parameters" />
       <module name="payee" options="-parameters" />
     </option>
   </component>
