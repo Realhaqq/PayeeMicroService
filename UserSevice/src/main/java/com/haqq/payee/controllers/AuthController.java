@@ -30,10 +30,4 @@ public class AuthController {
     }
 
 
-    // test
-    @PostMapping("/auth/test")
-    public String test() {
-        return "test";
-    }
-
 }

@@ -5,117 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eceb0841-30fb-4d88-be0a-38d430a5e57d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_11_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_11_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_4_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_17_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_17_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_62.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_62.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_62.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_21_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_4_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_36.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_8_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_29.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/UserSeviceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/config/AuditingConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/config/WebMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/controllers/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/entities/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/entities/Wallet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/enums/RoleName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/errors/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/pojos/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/pojos/GenericResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/pojos/JwtAuthenticationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/pojos/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/repositories/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/repositories/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/repositories/WalletRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/security/CurrentUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/security/CustomUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/security/JwtAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/security/JwtTokenProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/security/UserPrincipal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/services/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/utils/AESEncryptionDecryption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/utils/DateAudit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/resources/db/changelog/db.changelog-1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/resources/db/changelog/db.changelog-master.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/resources/liquibase-diff-changeLog.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/main/resources/liquibase.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSevice/src/test/java/com/haqq/payee/UserSeviceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/java/com/haqq/payee/WalletServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WalletService/src/test/java/com/haqq/payee/WalletServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DiscoveryServer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DiscoveryServer/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserIdentityService/src/main/java/com/haqq/payee/UserIdentityServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserIdentityService/src/main/java/com/haqq/payee/UserIdentityServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserIdentityService/src/main/java/com/haqq/payee/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserIdentityService/src/main/java/com/haqq/payee/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserIdentityService/src/main/java/com/haqq/payee/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserIdentityService/src/main/java/com/haqq/payee/controllers/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserIdentityService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UserIdentityService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/controllers/AuthController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +132,7 @@
       <workItem from="1652429708920" duration="590000" />
       <workItem from="1652430314785" duration="38000" />
       <workItem from="1652430364001" duration="3083000" />
-      <workItem from="1652433685794" duration="3343000" />
+      <workItem from="1652433685794" duration="3532000" />
     </task>
     <servers />
   </component>
