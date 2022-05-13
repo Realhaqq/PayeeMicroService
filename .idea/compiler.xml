@@ -10,10 +10,12 @@
         <module name="payee" />
         <module name="UserSevice" />
         <module name="WalletService" />
+        <module name="ProductService" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="payee" target="11" />
+      <module name="ProductService" target="11" />
       <module name="User Identity Service" target="11" />
       <module name="UserSevice" target="11" />
       <module name="WalletService" target="11" />
@@ -21,6 +23,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ProductService" options="-parameters" />
       <module name="User Identity Service" options="-parameters" />
       <module name="UserSevice" options="-parameters" />
       <module name="WalletService" options="-parameters" />
