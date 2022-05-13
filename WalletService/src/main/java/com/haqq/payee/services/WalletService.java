@@ -20,6 +20,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Service
 public class WalletService {
@@ -92,5 +93,9 @@ public class WalletService {
 
     public SettlementWallet getSettlementWallet(String role) {
         return settlementWalletRepository.findByRole(role);
+    }
+
+    public List<SettlementTransactions> getSettlementTransactions(String walletId) {
+        return settlementTransactionRepository.findAllByWalletId(walletId);
     }
 }

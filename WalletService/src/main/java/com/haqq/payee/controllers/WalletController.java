@@ -1,6 +1,7 @@
 package com.haqq.payee.controllers;
 
 
+import com.haqq.payee.entities.SettlementTransactions;
 import com.haqq.payee.entities.SettlementWallet;
 import com.haqq.payee.entities.Wallet;
 import com.haqq.payee.pojos.ApiResponse;
@@ -15,6 +16,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @CrossOrigin
 @RestController
@@ -45,6 +48,11 @@ public class WalletController {
     @GetMapping("/institution/getSettlementWallet/{role}")
     public SettlementWallet getSettlementWallet(@PathVariable String role) {
         return walletService.getSettlementWallet(role);
+    }
+
+    @GetMapping("/institution/getSettlementTransactions/{walletId}")
+    public List<SettlementTransactions> getSettlementTransactions(@PathVariable String walletId) {
+        return walletService.getSettlementTransactions(walletId);
     }
 
 }

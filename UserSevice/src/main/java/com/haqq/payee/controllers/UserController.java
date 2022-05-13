@@ -40,4 +40,10 @@ public class UserController {
     public SettlementWallet getInstitutionWallet(@PathVariable String role) {
         return userService.getInstitutionWallet(role);
     }
+
+    // get settlement transactions
+    @GetMapping("/institution/settlement/{walletId}")
+    public ResponseEntity<?> getSettlementTransactions(@PathVariable String walletId) {
+        return userService.getSettlementTransactions(walletId);
+    }
 }

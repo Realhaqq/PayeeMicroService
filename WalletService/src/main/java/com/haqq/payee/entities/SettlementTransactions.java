@@ -42,6 +42,10 @@ public class SettlementTransactions extends DateAudit implements Serializable {
 
     }
 
+    public SettlementTransactions() {
+
+    }
+
 
     @Override
     public boolean equals(Object user) {

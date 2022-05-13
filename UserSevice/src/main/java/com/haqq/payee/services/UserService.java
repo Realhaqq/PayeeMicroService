@@ -13,6 +13,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import retrofit2.Response;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Service
 public class UserService {
 
@@ -80,5 +83,22 @@ public class UserService {
         }
 
         return new SettlementWallet();
+    }
+
+    public ResponseEntity<?> getSettlementTransactions(String walletId) {
+        logger.info("Fetching settlement transactions for role: " +walletId);
+        try {
+            Response<List<SettlementTransactions>> response = walletServiceApiHandler.getSettlementTransactions(walletId);
+
+            if (response.isSuccessful()) {
+                logger.info("Settlement transactions found for user: " + response.body());
+                return new ResponseEntity(new ApiResponse(false, "Settlement Transactions Found", 000, response.body()), HttpStatus.OK);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            logger.error("Error while fetching settlement transactions for user: " +e.getMessage());
+        }
+
+        return new ResponseEntity(new ApiResponse(false, "Settlement Transactions Not Found", 101, null), HttpStatus.BAD_REQUEST);
     }
 }

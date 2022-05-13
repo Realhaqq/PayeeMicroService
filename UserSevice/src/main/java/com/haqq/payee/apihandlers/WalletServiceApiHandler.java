@@ -3,6 +3,7 @@ package com.haqq.payee.apihandlers;
 import com.google.gson.GsonBuilder;
 import com.haqq.payee.pojos.CreateWalletRequest;
 import com.haqq.payee.pojos.MakePaymentRequest;
+import com.haqq.payee.pojos.SettlementTransactions;
 import com.haqq.payee.pojos.Wallet;
 import com.haqq.payee.retrofitservice.WalletService;
 import lombok.RequiredArgsConstructor;
@@ -17,6 +18,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 import javax.annotation.PostConstruct;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 @Service
@@ -69,5 +72,10 @@ public class WalletServiceApiHandler {
     public Response getInstitutionWallet(String role) throws IOException {
         String token = "Bearer " + this.token;
         return walletService.getInstitutionWallet(token, role).execute();
+    }
+
+    public Response<List<SettlementTransactions>> getSettlementTransactions(String walletId) throws IOException {
+        String token = "Bearer " + this.token;
+        return walletService.getSettlementTransactions(token, walletId).execute();
     }
 }
