@@ -4,12 +4,15 @@ import com.haqq.payee.entities.Product;
 import com.haqq.payee.pojos.ApiResponse;
 import com.haqq.payee.pojos.CreateProductRequest;
 import com.haqq.payee.repositories.ProductRepository;
+import com.haqq.payee.security.UserPrincipal;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+
+import java.util.UUID;
 
 @Service
 public class ProductService {
@@ -18,13 +21,15 @@ public class ProductService {
 
     Logger logger = LoggerFactory.getLogger(ProductService.class);
 
-    public ResponseEntity<?> createProduct(CreateProductRequest createProductRequest) {
+    public ResponseEntity<?> createProduct(CreateProductRequest createProductRequest, UserPrincipal currentUser) {
         Product product = new Product();
         product.setProductName(createProductRequest.getProductName());
         product.setProductType(createProductRequest.getProductType());
         product.setProductCode(System.currentTimeMillis() + "");
-        product.setCreatorUuid(createProductRequest.getUuid());
+        product.setCreatorUuid(currentUser.getUuid());
         product.setPrice(createProductRequest.getPrice());
+
+        String uuid = UUID.randomUUID().toString();
 
         productRepository.save(product);
 
@@ -47,7 +52,7 @@ public class ProductService {
     }
 
     public ResponseEntity<?> deleteProduct(String productCode) {
-        productRepository.deleteByProductCode(productCode);
+        productRepository.delete(productRepository.findByProductCode(productCode));
         return new ResponseEntity(new ApiResponse(true, "Product Deleted Successfully", 000, null),
                 HttpStatus.OK);
 

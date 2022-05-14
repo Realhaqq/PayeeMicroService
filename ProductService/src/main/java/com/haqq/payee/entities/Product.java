@@ -26,7 +26,7 @@ public class Product extends DateAudit implements Serializable {
     private String productName;
     private String productType;
 
-    @Column(length=20)
+
     private String creatorUuid;
 
     public Product(Product product) {
