@@ -1,4 +1,8 @@
 spring:
+  profiles:
+    active: local
+  application:
+    name: wallet-service
   liquibase:
     enabled: true
     change-log: classpath:db/changelog/db.changelog-master.xml
@@ -6,7 +10,7 @@ spring:
     location: classpath:banner.txt
 
 server:
-  port: 8081
+  port: 8185
 management:
   endpoints:
     web:
@@ -17,6 +21,14 @@ spring:
   profiles: local
   cloud:
     config:
-      uri: http://localhost:8081
+      uri: http://localhost:8185
       label: develop
+
+---
+spring:
+  profiles: prod
+  cloud:
+    config:
+      uri: http://config-server:80
+      label: master
 
