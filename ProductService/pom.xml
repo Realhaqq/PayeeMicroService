@@ -11,7 +11,7 @@
     <groupId>com.haqq</groupId>
     <artifactId>ProductService</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ProductService</name>
+    <name>product-service</name>
     <description>ProductService</description>
     <properties>
         <java.version>11</java.version>
