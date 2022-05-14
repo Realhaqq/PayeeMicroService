@@ -1,5 +1,6 @@
 package com.haqq.payee.controllers;
 
+import com.haqq.payee.entities.Product;
 import com.haqq.payee.pojos.CreateProductRequest;
 import com.haqq.payee.security.CurrentUser;
 import com.haqq.payee.security.UserPrincipal;
@@ -12,6 +13,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @CrossOrigin
 @RestController
@@ -31,12 +33,12 @@ public class ProductController {
     }
 
     @GetMapping("/products")
-    public ResponseEntity<?> getAllProducts() {
+    public List<Product> getAllProducts() {
         return productService.getAllProducts();
     }
 
     @GetMapping("/products/creator/{creatorUuid}")
-    public ResponseEntity<?> getProductsByCreatorUuid(@PathVariable String creatorUuid) {
+    public List<Product> getProductsByCreatorUuid(@PathVariable String creatorUuid) {
         return productService.getProductsByCreatorUuid(creatorUuid);
     }
 

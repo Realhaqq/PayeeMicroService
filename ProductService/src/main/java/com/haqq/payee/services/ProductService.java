@@ -12,6 +12,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.UUID;
 
 @Service
@@ -39,15 +40,13 @@ public class ProductService {
 
     }
 
-    public ResponseEntity<?> getAllProducts() {
-        return new ResponseEntity(new ApiResponse(true, "Products Fetched Successfully", 000, productRepository.findAll()),
-                HttpStatus.OK);
-
+    public List<Product> getAllProducts() {
+        return productRepository.findAll();
     }
 
-    public ResponseEntity<?> getProductsByCreatorUuid(String creatorUuid) {
-        return new ResponseEntity(new ApiResponse(true, "Products Fetched Successfully", 000, productRepository.findByCreatorUuid(creatorUuid)),
-                HttpStatus.OK);
+    public List<Product> getProductsByCreatorUuid(String creatorUuid) {
+
+        return productRepository.findByCreatorUuid(creatorUuid);
 
     }
 

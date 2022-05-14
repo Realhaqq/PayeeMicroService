@@ -16,6 +16,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 import javax.annotation.PostConstruct;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -77,7 +78,7 @@ public class ProductServiceApiHandler {
     }
 
 
-    public Response<List<Product>> getProductsByCreator(String creatorId) throws Exception {
+    public Response<Product> getProductsByCreator(String creatorId) throws Exception {
 
         String token = "Bearer " + this.token;
 

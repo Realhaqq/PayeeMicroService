@@ -5,6 +5,7 @@ import com.haqq.payee.pojos.Product;
 import retrofit2.http.*;
 import retrofit2.Call;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -26,7 +27,7 @@ public interface ProductService {
     Call<List<Product>> getAllProducts(@Header("Authorization") String token);
 
     @GET(GET_PRODUCT_BY_CREATOR)
-    Call<List<Product>> getAllProductsByCreator(@Header("Authorization") String token, @Path("creatorUuid") String creatorUuid);
+    Call<Product> getAllProductsByCreator(@Header("Authorization") String token, @Path("creatorUuid") String creatorUuid);
 
     @DELETE(DELETE_PRODUCT)
     Call<Product> deleteProduct(@Header("Authorization") String token, @Path("productCode") String productCode);

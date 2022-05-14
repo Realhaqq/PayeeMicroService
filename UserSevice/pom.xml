@@ -12,7 +12,7 @@
     <groupId>com.haqq</groupId>
     <artifactId>UserSevice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>UserSevice</name>
+    <name>user-service</name>
     <description>UserSevice</description>
     <properties>
         <java.version>11</java.version>
@@ -214,7 +214,7 @@
                 </dependencies>
             </plugin>
         </plugins>
-        <finalName>identity-service</finalName>
+        <finalName>user-service</finalName>
     </build>
 
     <repositories>

@@ -61,7 +61,8 @@ public class AuthService {
             SecurityContextHolder.getContext().setAuthentication(authentication);
             String jwt = tokenProvider.generateToken(authentication);
             User user = userRepository.findByEmail(loginRequest.getEmail()).get();
-            return ResponseEntity.ok(new JwtAuthenticationResponse(jwt, 180000, user));
+            return ResponseEntity.status(HttpStatus.OK).body(new JwtAuthenticationResponse(jwt, 180000, user));
+
         } catch (Exception e) {
             e.printStackTrace();
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(new ApiResponse(false, "Invalid Credentials", 101, null));

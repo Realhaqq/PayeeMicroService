@@ -1,4 +1,8 @@
 spring:
+  profiles:
+    active: local
+  application:
+    name: user-service
   liquibase:
     enabled: true
     change-log: classpath:db/changelog/db.changelog-master.xml
@@ -6,7 +10,7 @@ spring:
     location: classpath:banner.txt
 
 server:
-  port: 2021
+  port: 8182
 management:
   endpoints:
     web:
@@ -17,6 +21,14 @@ spring:
   profiles: local
   cloud:
     config:
-      uri: http://localhost:2021
+      uri: http://localhost:8182
       label: develop
+
+---
+spring:
+  profiles: prod
+  cloud:
+    config:
+      uri: http://config-server:80
+      label: master
 

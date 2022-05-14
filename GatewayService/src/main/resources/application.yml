@@ -1,0 +1,40 @@
+spring:
+    profiles: local
+eureka:
+    client:
+       serviceUrl:
+           defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+zuul:
+  sensitiveHeaders:
+  routes:
+    user-serv:
+      path: /authserv/**
+      service-id: user-service
+    wallet-serv:
+      path: /walletserv/**
+      service-id: wallet-service
+    product-serv:
+      path: /productserv/**
+      service-id: product-service
+        
+
+---
+spring:
+    profiles: prod
+eureka:
+    client:
+       serviceUrl:
+           defaultZone: ${EUREKA_URI:http://eureka-server/eureka}
+zuul:
+  ignoredServices: 'zuul-gateway'
+  sensitiveHeaders:
+  routes:
+    user-serv:
+      path: /authserv/**
+      url: http://authservice
+    wallet-serv:
+      path: /walletserv/**
+      url: http://wallet-service
+    product-serv:
+      path: /productserv/**
+      url: http://product-service
