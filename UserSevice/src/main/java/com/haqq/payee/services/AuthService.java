@@ -60,7 +60,8 @@ public class AuthService {
 
             SecurityContextHolder.getContext().setAuthentication(authentication);
             String jwt = tokenProvider.generateToken(authentication);
-            return ResponseEntity.ok(new JwtAuthenticationResponse(jwt, 180000));
+            User user = userRepository.findByEmail(loginRequest.getEmail()).get();
+            return ResponseEntity.ok(new JwtAuthenticationResponse(jwt, 180000, user));
         } catch (Exception e) {
             e.printStackTrace();
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(new ApiResponse(false, "Invalid Credentials", 101, null));
@@ -71,13 +72,13 @@ public class AuthService {
 
     public ResponseEntity<?> userSignup(SignUpRequest signUpRequest) {
         if(userRepository.existsByEmail(signUpRequest.getEmail()))
-            return new ResponseEntity(new ApiResponse(false, "Email Address already in use!", 101, null),
-                    HttpStatus.BAD_REQUEST);
+        return ResponseEntity.status(HttpStatus.IM_USED).body(new ApiResponse(false, "Email Address already in use!", 101, null));
+
 
 
         if(userRepository.existsByEmail(signUpRequest.getUsername()))
-            return new ResponseEntity(new ApiResponse(false, "Username already in use!", 101, null),
-                    HttpStatus.BAD_REQUEST);
+        return ResponseEntity.status(HttpStatus.IM_USED).body(new ApiResponse(false, "Username already in use!", 101, null));
+
 
 
 
@@ -105,11 +106,12 @@ public class AuthService {
             URI location = ServletUriComponentsBuilder
                     .fromCurrentContextPath().path("/users/{username}")
                     .buildAndExpand(result.getUsername()).toUri();
-            return ResponseEntity.created(location).body(new ApiResponse(true, "User registered successfully", 000, result));
+            return ResponseEntity.status(HttpStatus.OK).body(new ApiResponse(true, "User registered successfully", 101, null));
+
 
         } catch (Exception e) {
             System.out.println(e);
-            return new ResponseEntity(new ApiResponse(false, "Error Occured!", 101, null), HttpStatus.BAD_REQUEST);
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new ApiResponse(false, "Error Occured!", 101, null));
         }
 
     }

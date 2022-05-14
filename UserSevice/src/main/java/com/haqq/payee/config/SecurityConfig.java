@@ -12,6 +12,7 @@ import org.springframework.security.config.BeanIds;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
@@ -78,14 +79,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         "/**/*.svg",
                         "/**/*.jpg",
                         "/**/*.html",
+                        "/**/*.jsp",
                         "/**/*.css",
                         "/**/*.js")
                         .permitAll()
-                    .antMatchers("/api/v1/auth/**")
+                    .antMatchers("/api/v1/auth/**", "/user/**", "/register","/login")
                         .permitAll()
                     .antMatchers("/api/user/checkUsernameAvailability", "/api/user/checkEmailAvailability")
                         .permitAll()
-                    .antMatchers(HttpMethod.GET,  "/api/users/**", "/api/v1/institution/wallet/{role}","/api/v1/institution/getSettlementTransactions/{role}")
+                    .antMatchers(HttpMethod.GET,  "/api/users/**", "/api/v1/institution/wallet/{role}","/api/v1/institution/getSettlementTransactions/{role}", "/greeting")
                         .permitAll()
                     .anyRequest()
                         .authenticated();
@@ -93,5 +95,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         // Add our custom JWT security filter
         http.addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
 
+    }
+
+    @Override
+    public void configure(WebSecurity web) throws Exception {
+        web
+                .ignoring()
+                .antMatchers("/resources/**");
     }
 }
