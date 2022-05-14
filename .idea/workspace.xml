@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="eceb0841-30fb-4d88-be0a-38d430a5e57d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WalletService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WalletService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WalletService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WalletService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WalletService/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/WalletService/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +161,7 @@
       <workItem from="1652457746144" duration="5377000" />
       <workItem from="1652510378564" duration="1082000" />
       <workItem from="1652511476482" duration="14454000" />
-      <workItem from="1652541096982" duration="1312000" />
+      <workItem from="1652541096982" duration="1727000" />
     </task>
     <servers />
   </component>
