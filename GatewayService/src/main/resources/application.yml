@@ -2,8 +2,12 @@ spring:
     profiles: local
 eureka:
     client:
-       serviceUrl:
-           defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+      registerWithEureka: false
+      fetchRegistry: false
+      server:
+          waitTimeInMsWhenSyncEmpty: 0
+    serviceUrl:
+           defaultZone: ${EUREKA_URI:https://payee-dicovery-server-po7pb.ondigitalocean.app/eureka}
 zuul:
   sensitiveHeaders:
   routes:
@@ -24,17 +28,17 @@ spring:
 eureka:
     client:
        serviceUrl:
-           defaultZone: ${EUREKA_URI:http://eureka-server/eureka}
+           defaultZone: ${EUREKA_URI:https://payee-dicovery-server-po7pb.ondigitalocean.app/eureka}
 zuul:
   ignoredServices: 'zuul-gateway'
   sensitiveHeaders:
   routes:
     user-serv:
       path: /authserv/**
-      url: http://authservice
+      url: https://payee-user-service-52hrr.ondigitalocean.app
     wallet-serv:
       path: /walletserv/**
-      url: http://wallet-service
+      url: https://payee-wallet-service-ovb4z.ondigitalocean.app
     product-serv:
       path: /productserv/**
-      url: http://product-service
+      url: https://payee-product-service-yp833.ondigitalocean.app
