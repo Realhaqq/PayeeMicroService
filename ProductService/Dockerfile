@@ -2,8 +2,8 @@ FROM maven:3.6.3-openjdk-11 AS maven_build
 
 FROM openjdk
 
-EXPOSE 8185
+EXPOSE 8081
 
-ADD target/wallet-service.jar wallet-service.jar
+ADD target/product-service.jar product-service.jar
 
-ENTRYPOINT ["java", "-jar", "wallet-service.jar"]
+ENTRYPOINT ["java", "-jar", "product-service.jar"]

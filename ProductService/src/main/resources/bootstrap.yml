@@ -1,27 +1,36 @@
 spring:
-  profiles:
-    active: local
+  profiles: local
   application:
     name: product-service
-  liquibase:
-    enabled: true
-    change-log: classpath:db/changelog/db.changelog-master.xml
-  banner:
-    location: classpath:banner.txt
+    liquibase:
+      enabled: true
+      change-log: classpath:db/changelog/db.changelog-master.xml
+    banner:
+      location: classpath:banner.txt
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    server:
+      waitTimeInMsWhenSyncEmpty: 0
+  serviceUrl:
+    defaultZone: ${EUREKA_URI:https://payee-dicovery-server-po7pb.ondigitalocean.app/eureka}
 
 server:
-  port: 8181
+  port: 8081
 management:
   endpoints:
     web:
       exposure:
         include: refresh,health
+
 ---
 spring:
   profiles: local
   cloud:
     config:
-      uri: http://localhost:8181
+      uri: http://localhost:8185
       label: develop
 
 ---

@@ -80,9 +80,6 @@ public class AuthService {
         if(userRepository.existsByEmail(signUpRequest.getUsername()))
         return ResponseEntity.status(HttpStatus.IM_USED).body(new ApiResponse(false, "Username already in use!", 101, null));
 
-
-
-
         String uuid = UUID.randomUUID().toString();
 
         // Creating user's account

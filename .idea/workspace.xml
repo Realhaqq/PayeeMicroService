@@ -6,7 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="eceb0841-30fb-4d88-be0a-38d430a5e57d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DiscoveryServer/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/DiscoveryServer/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/resources/db/changelog/db.changelog-1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/resources/db/changelog/db.changelog-1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/resources/db/changelog/db.changelog-2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/resources/db/changelog/db.changelog-2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/resources/db/changelog/db.changelog-master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/resources/db/changelog/db.changelog-master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSevice/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/services/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/java/com/haqq/payee/services/AuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSevice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSevice/src/main/resources/liquibase.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UserSevice/src/main/resources/liquibase.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalletService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/WalletService/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalletService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WalletService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalletService/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/WalletService/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalletService/src/main/resources/db/changelog/db.changelog-1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WalletService/src/main/resources/db/changelog/db.changelog-1.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +60,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/GatewayService/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ProductService" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -54,6 +70,9 @@
     <property name="project.structure.proportion" value="0.15429688" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.haqq.payee.pojos" />
@@ -61,11 +80,11 @@
       <recent name="com.haqq.payee.services" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/GatewayService/src/main/java" />
-      <recent name="$PROJECT_DIR$/GatewayService/src/main/resources" />
-      <recent name="$PROJECT_DIR$/configuration" />
-      <recent name="$PROJECT_DIR$/EurekaServer/src/main/resources/META-INF" />
-      <recent name="$PROJECT_DIR$/UserSevice/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/ProductService" />
+      <recent name="$PROJECT_DIR$/WalletService" />
+      <recent name="$PROJECT_DIR$/UserSevice" />
+      <recent name="$PROJECT_DIR$/GatewayService" />
+      <recent name="$PROJECT_DIR$/DiscoveryServer" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.haqq.payee" />
@@ -161,7 +180,7 @@
       <workItem from="1652457746144" duration="5377000" />
       <workItem from="1652510378564" duration="1082000" />
       <workItem from="1652511476482" duration="14454000" />
-      <workItem from="1652541096982" duration="1727000" />
+      <workItem from="1652541096982" duration="18952000" />
     </task>
     <servers />
   </component>

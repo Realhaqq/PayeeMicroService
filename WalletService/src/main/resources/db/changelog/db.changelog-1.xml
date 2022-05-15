@@ -9,7 +9,7 @@
               `balance` decimal(15,2) DEFAULT 0,
               `role` varchar(40) NOT NULL,
               `wallet_id` varchar(40) NOT NULL,
-              `created_at` date DEFAULT NOW(),
+              `created_at` date  NULL,
               `updated_at` date NULL,
               PRIMARY KEY (`id`)
             ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
